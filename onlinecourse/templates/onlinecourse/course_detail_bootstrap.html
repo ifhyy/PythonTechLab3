@@ -62,7 +62,7 @@
                             </div>
                             {% csrf_token %}
                             <div class="form-group">
-                                {% for choice in question.choice_set.all %}
+                                {% for choice in question.choices.all %}
                                 <div class="form-check">
                                     <label class="form-check-label">
                                         <input type="checkbox" name="choice_{{choice.id}}" class="form-check-input"
